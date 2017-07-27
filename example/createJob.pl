@@ -21,6 +21,13 @@ unless($api->check_jenkins_url)
     exit 2;
 }
 
+=head 
+my $jenkins = Jenkins::API->new({
+        base_url => 'http://jenkins:8080',
+        api_key => 'username',
+        api_pass => 'apitoken',
+    });
+=cut
 
 
 ###get config.xml template
